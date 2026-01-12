@@ -19,8 +19,7 @@ int main(){
 	 scanf("%d",&choice);
 	 switch(choice){
 	  case 1:
-	 	  printf("your curent balance:");
-	 	  scanf("%d",&balance);
+	 	  printf("your curent balance:",balance);
 	 	  break;
 	    case 2:
 	 	  printf("enter emount to withdraw:");
@@ -38,7 +37,7 @@ int main(){
 		   }
 		case 3:
 			printf("enter amount to desposite:");
-			scanf("%d",&amount);
+			scanf("%d\n",&amount);
 			balance = balance + amount;
 			printf("amount desposit successfully:\n");
 			printf("update balance : %d\n",balance);
@@ -47,7 +46,7 @@ int main(){
 			printf("thank you for atm system:\n");
 			return 0;
 		default:
-			printf("invali choice! try again\n:");							 	 	 	
+			printf("invalid choice! try again\n:");							 	 	 	
 		 }
 	  }        
    }
