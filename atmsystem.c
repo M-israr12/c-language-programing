@@ -19,7 +19,7 @@ int main(){
 	 scanf("%d",&choice);
 	 switch(choice){
 	  case 1:
-	 	  printf("your curent balance:",balance);
+	 	  printf("your curent balance:%d",balance);
 	 	  break;
 	    case 2:
 	 	  printf("enter emount to withdraw:");
@@ -27,8 +27,8 @@ int main(){
 	 	  if(amount <= balance)
 	 	  {
 	 	   balance = balance - amount;
-	 	   printf("pleas collect your cash:");
-	 	   printf("remaining balance:%d",balance);
+	 	   printf("pleas collect your cash:\n");
+	 	   printf("remaining balance:%d\n",balance);
 		   }
 		   else 
 		   {
@@ -37,10 +37,10 @@ int main(){
 		   }
 		case 3:
 			printf("enter amount to desposite:");
-			scanf("%d\n",&amount);
+			scanf("%d",&amount);
 			balance = balance + amount;
-			printf("amount desposit successfully:\n");
-			printf("update balance : %d\n",balance);
+			printf("amount desposit successfully:");
+			printf("update balance : %d",balance);
 			break;
 		case 4:
 			printf("thank you for atm system:\n");
